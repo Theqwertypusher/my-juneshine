@@ -17,3 +17,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.home {
+  background: linear-gradient(to right, #ead1eb, #1a7560);
+}
