@@ -19,5 +19,5 @@ body {
 }
 
 .home {
-  background-color: grey;
+  background: linear-gradient(to right, #ead1eb, #1a7560);
 }
