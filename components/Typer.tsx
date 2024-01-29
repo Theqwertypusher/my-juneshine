@@ -19,6 +19,17 @@ export const Typer: FC<TyperProps> = ({ onComplete }) => {
     "namely, Jay",
   ];
 
+  const iGotTheNug = [
+    "Hey sweetie, looks like you found the first nugget.",
+    "One of potentially many!",
+    "Not much to explain about this except it’s my way of leaving you random nuggets when you least expect it.",
+    "And if you’re reading this, I can assume you’ve moved onto packing your room and you have cleared your shelf.",
+    "I just wanted to tell you how much I am proud of you.",
+    "Life ain’t easy but you manage to show up for your loved ones by moving home and for youself by pursuing and investing in a new career.",
+    "I’m sure this week will be a busy one however there is one thing you must do for me before you leave St. Pete.",
+    "But first, text me, “I got the nug” that way I know you’ve read this. No need to ask questions. There will be a follow up reply from me.",
+  ];
+
   const greetingMessage = [
     "Why hello onion bat.",
     "Before I type on,",
@@ -29,7 +40,7 @@ export const Typer: FC<TyperProps> = ({ onComplete }) => {
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: inConstructionMessage,
+      strings: iGotTheNug,
       typeSpeed: 50,
       // onComplete: () => {
       //   console.log("complete"), onComplete();
@@ -43,7 +54,7 @@ export const Typer: FC<TyperProps> = ({ onComplete }) => {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App p-4">
       <span ref={el} />
     </div>
   );
